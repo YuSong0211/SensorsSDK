@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06439F7C271921A500EAE784 /* SensorsAnalyticsFileStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 06439F7A271921A500EAE784 /* SensorsAnalyticsFileStore.h */; };
+		06439F7D271921A500EAE784 /* SensorsAnalyticsFileStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 06439F7B271921A500EAE784 /* SensorsAnalyticsFileStore.m */; };
+		06439F8427192C3B00EAE784 /* SensorsAnalyticsDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 06439F8227192C3B00EAE784 /* SensorsAnalyticsDatabase.h */; };
+		06439F8527192C3B00EAE784 /* SensorsAnalyticsDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 06439F8327192C3B00EAE784 /* SensorsAnalyticsDatabase.m */; };
+		0656CBB326FAF18800DA3566 /* NSObject+SASwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0656CBB126FAF18800DA3566 /* NSObject+SASwizzler.h */; };
+		0656CBB426FAF18800DA3566 /* NSObject+SASwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0656CBB226FAF18800DA3566 /* NSObject+SASwizzler.m */; };
+		0656CBB726FAFE8B00DA3566 /* UIViewController+SensorsData.h in Headers */ = {isa = PBXBuildFile; fileRef = 0656CBB526FAFE8B00DA3566 /* UIViewController+SensorsData.h */; };
+		0656CBB826FAFE8B00DA3566 /* UIViewController+SensorsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0656CBB626FAFE8B00DA3566 /* UIViewController+SensorsData.m */; };
+		066A4A9226FC2A1800B92385 /* sensorsdata_black_list.plist in Resources */ = {isa = PBXBuildFile; fileRef = 066A4A9126FC2A1800B92385 /* sensorsdata_black_list.plist */; };
+		066A4AFD26FD74CC00B92385 /* UIApplication+SensorsData.h in Headers */ = {isa = PBXBuildFile; fileRef = 066A4AFB26FD74CC00B92385 /* UIApplication+SensorsData.h */; };
+		066A4AFE26FD74CC00B92385 /* UIApplication+SensorsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 066A4AFC26FD74CC00B92385 /* UIApplication+SensorsData.m */; };
+		066A4B0126FD778E00B92385 /* UIView+SensorsData.h in Headers */ = {isa = PBXBuildFile; fileRef = 066A4AFF26FD778E00B92385 /* UIView+SensorsData.h */; };
+		066A4B0226FD778E00B92385 /* UIView+SensorsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 066A4B0026FD778E00B92385 /* UIView+SensorsData.m */; };
+		066A4B0B270015DF00B92385 /* UIControl+SensorsData.h in Headers */ = {isa = PBXBuildFile; fileRef = 066A4B09270015DF00B92385 /* UIControl+SensorsData.h */; };
+		066A4B0C270015DF00B92385 /* UIControl+SensorsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 066A4B0A270015DF00B92385 /* UIControl+SensorsData.m */; };
+		06CE1A3A26F196AB00C1B0B6 /* SensorsSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 06CE1A3826F196AB00C1B0B6 /* SensorsSDK.h */; platformFilter = ios; settings = {ATTRIBUTES = (Public, ); }; };
+		06CE1A8F26F197A000C1B0B6 /* SensorsAnalyticsSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 06CE1A8D26F197A000C1B0B6 /* SensorsAnalyticsSDK.h */; platformFilter = ios; settings = {ATTRIBUTES = (Public, ); }; };
+		06CE1A9026F197A000C1B0B6 /* SensorsAnalyticsSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CE1A8E26F197A000C1B0B6 /* SensorsAnalyticsSDK.m */; };
+		06FFF22A2701651B006DE845 /* UITableView+SensorsData.h in Headers */ = {isa = PBXBuildFile; fileRef = 06FFF2282701651B006DE845 /* UITableView+SensorsData.h */; };
+		06FFF22B2701651B006DE845 /* UITableView+SensorsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FFF2292701651B006DE845 /* UITableView+SensorsData.m */; };
+		06FFF2342702C7B0006DE845 /* SensorsAnalyticsDynamicDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 06FFF2322702C7B0006DE845 /* SensorsAnalyticsDynamicDelegate.h */; };
+		06FFF2352702C7B0006DE845 /* SensorsAnalyticsDynamicDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FFF2332702C7B0006DE845 /* SensorsAnalyticsDynamicDelegate.m */; };
+		06FFF23B270313F0006DE845 /* SensorsAnalyticsDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 06FFF239270313EF006DE845 /* SensorsAnalyticsDelegateProxy.h */; };
+		06FFF23C270313F0006DE845 /* SensorsAnalyticsDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FFF23A270313F0006DE845 /* SensorsAnalyticsDelegateProxy.m */; };
+		06FFF23F270315BB006DE845 /* UIScrollView+SensorsData.h in Headers */ = {isa = PBXBuildFile; fileRef = 06FFF23D270315BB006DE845 /* UIScrollView+SensorsData.h */; };
+		06FFF240270315BB006DE845 /* UIScrollView+SensorsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FFF23E270315BB006DE845 /* UIScrollView+SensorsData.m */; };
+		06FFF24327040DDA006DE845 /* UICollectionView+SensorsData.h in Headers */ = {isa = PBXBuildFile; fileRef = 06FFF24127040DDA006DE845 /* UICollectionView+SensorsData.h */; };
+		06FFF24427040DDA006DE845 /* UICollectionView+SensorsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FFF24227040DDA006DE845 /* UICollectionView+SensorsData.m */; };
+		06FFF24A2704126C006DE845 /* UIGestureRecognizer+SensorsData.h in Headers */ = {isa = PBXBuildFile; fileRef = 06FFF2482704126C006DE845 /* UIGestureRecognizer+SensorsData.h */; };
+		06FFF24B2704126C006DE845 /* UIGestureRecognizer+SensorsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FFF2492704126C006DE845 /* UIGestureRecognizer+SensorsData.m */; };
+		06FFF31F271593CF006DE845 /* SensorsAnalyticsKeychainItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 06FFF31D271593CF006DE845 /* SensorsAnalyticsKeychainItem.h */; };
+		06FFF320271593CF006DE845 /* SensorsAnalyticsKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FFF31E271593CF006DE845 /* SensorsAnalyticsKeychainItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06CE1A8726F1976400C1B0B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06CE1A8126F1976400C1B0B6 /* Demo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06CE1A4926F1975300C1B0B6;
+			remoteInfo = Demo;
+		};
+		06CE1A8926F1976400C1B0B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06CE1A8126F1976400C1B0B6 /* Demo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06CE1A6426F1975400C1B0B6;
+			remoteInfo = DemoTests;
+		};
+		06CE1A8B26F1976400C1B0B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06CE1A8126F1976400C1B0B6 /* Demo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06CE1A6F26F1975400C1B0B6;
+			remoteInfo = DemoUITests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0656CBA426F5B59E00DA3566 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		06439F7A271921A500EAE784 /* SensorsAnalyticsFileStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SensorsAnalyticsFileStore.h; sourceTree = "<group>"; };
+		06439F7B271921A500EAE784 /* SensorsAnalyticsFileStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SensorsAnalyticsFileStore.m; sourceTree = "<group>"; };
+		06439F8227192C3B00EAE784 /* SensorsAnalyticsDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SensorsAnalyticsDatabase.h; sourceTree = "<group>"; };
+		06439F8327192C3B00EAE784 /* SensorsAnalyticsDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SensorsAnalyticsDatabase.m; sourceTree = "<group>"; };
+		0656CB9D26F59C3000DA3566 /* SensorsSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SensorsSDK.h; sourceTree = "<group>"; };
+		0656CB9E26F59C3000DA3566 /* SensorsAnalyticsSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SensorsAnalyticsSDK.m; sourceTree = "<group>"; };
+		0656CB9F26F59C3000DA3566 /* SensorsAnalyticsSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SensorsAnalyticsSDK.h; sourceTree = "<group>"; };
+		0656CBA026F59C3000DA3566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0656CBB126FAF18800DA3566 /* NSObject+SASwizzler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SASwizzler.h"; sourceTree = "<group>"; };
+		0656CBB226FAF18800DA3566 /* NSObject+SASwizzler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SASwizzler.m"; sourceTree = "<group>"; };
+		0656CBB526FAFE8B00DA3566 /* UIViewController+SensorsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SensorsData.h"; sourceTree = "<group>"; };
+		0656CBB626FAFE8B00DA3566 /* UIViewController+SensorsData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SensorsData.m"; sourceTree = "<group>"; };
+		066A4A9126FC2A1800B92385 /* sensorsdata_black_list.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = sensorsdata_black_list.plist; sourceTree = "<group>"; };
+		066A4AFB26FD74CC00B92385 /* UIApplication+SensorsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+SensorsData.h"; sourceTree = "<group>"; };
+		066A4AFC26FD74CC00B92385 /* UIApplication+SensorsData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+SensorsData.m"; sourceTree = "<group>"; };
+		066A4AFF26FD778E00B92385 /* UIView+SensorsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SensorsData.h"; sourceTree = "<group>"; };
+		066A4B0026FD778E00B92385 /* UIView+SensorsData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SensorsData.m"; sourceTree = "<group>"; };
+		066A4B09270015DF00B92385 /* UIControl+SensorsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+SensorsData.h"; sourceTree = "<group>"; };
+		066A4B0A270015DF00B92385 /* UIControl+SensorsData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+SensorsData.m"; sourceTree = "<group>"; };
+		06CE1A3526F196AB00C1B0B6 /* SensorsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SensorsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06CE1A3826F196AB00C1B0B6 /* SensorsSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SensorsSDK.h; sourceTree = "<group>"; };
+		06CE1A3926F196AB00C1B0B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06CE1A8126F1976400C1B0B6 /* Demo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Demo.xcodeproj; path = Demo/Demo.xcodeproj; sourceTree = "<group>"; };
+		06CE1A8D26F197A000C1B0B6 /* SensorsAnalyticsSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SensorsAnalyticsSDK.h; sourceTree = "<group>"; };
+		06CE1A8E26F197A000C1B0B6 /* SensorsAnalyticsSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SensorsAnalyticsSDK.m; sourceTree = "<group>"; };
+		06CE1A9226F1980900C1B0B6 /* SensorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SensorKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/SensorKit.framework; sourceTree = DEVELOPER_DIR; };
+		06FFF2282701651B006DE845 /* UITableView+SensorsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+SensorsData.h"; sourceTree = "<group>"; };
+		06FFF2292701651B006DE845 /* UITableView+SensorsData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SensorsData.m"; sourceTree = "<group>"; };
+		06FFF2322702C7B0006DE845 /* SensorsAnalyticsDynamicDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SensorsAnalyticsDynamicDelegate.h; sourceTree = "<group>"; };
+		06FFF2332702C7B0006DE845 /* SensorsAnalyticsDynamicDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SensorsAnalyticsDynamicDelegate.m; sourceTree = "<group>"; };
+		06FFF239270313EF006DE845 /* SensorsAnalyticsDelegateProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SensorsAnalyticsDelegateProxy.h; sourceTree = "<group>"; };
+		06FFF23A270313F0006DE845 /* SensorsAnalyticsDelegateProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SensorsAnalyticsDelegateProxy.m; sourceTree = "<group>"; };
+		06FFF23D270315BB006DE845 /* UIScrollView+SensorsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SensorsData.h"; sourceTree = "<group>"; };
+		06FFF23E270315BB006DE845 /* UIScrollView+SensorsData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SensorsData.m"; sourceTree = "<group>"; };
+		06FFF24127040DDA006DE845 /* UICollectionView+SensorsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+SensorsData.h"; sourceTree = "<group>"; };
+		06FFF24227040DDA006DE845 /* UICollectionView+SensorsData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+SensorsData.m"; sourceTree = "<group>"; };
+		06FFF2482704126C006DE845 /* UIGestureRecognizer+SensorsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+SensorsData.h"; sourceTree = "<group>"; };
+		06FFF2492704126C006DE845 /* UIGestureRecognizer+SensorsData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+SensorsData.m"; sourceTree = "<group>"; };
+		06FFF31D271593CF006DE845 /* SensorsAnalyticsKeychainItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SensorsAnalyticsKeychainItem.h; sourceTree = "<group>"; };
+		06FFF31E271593CF006DE845 /* SensorsAnalyticsKeychainItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SensorsAnalyticsKeychainItem.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06CE1A3226F196AB00C1B0B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0656CB9C26F59C3000DA3566 /* SensorsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0656CB9D26F59C3000DA3566 /* SensorsSDK.h */,
+				0656CB9E26F59C3000DA3566 /* SensorsAnalyticsSDK.m */,
+				0656CB9F26F59C3000DA3566 /* SensorsAnalyticsSDK.h */,
+				0656CBA026F59C3000DA3566 /* Info.plist */,
+			);
+			path = SensorsSDK;
+			sourceTree = "<group>";
+		};
+		06CE1A2B26F196AB00C1B0B6 = {
+			isa = PBXGroup;
+			children = (
+				06CE1A8126F1976400C1B0B6 /* Demo.xcodeproj */,
+				06CE1A3726F196AB00C1B0B6 /* SensorsSDK */,
+				06CE1A3626F196AB00C1B0B6 /* Products */,
+				06CE1A9126F1980900C1B0B6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		06CE1A3626F196AB00C1B0B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06CE1A3526F196AB00C1B0B6 /* SensorsSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06CE1A3726F196AB00C1B0B6 /* SensorsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				06CE1A3826F196AB00C1B0B6 /* SensorsSDK.h */,
+				06CE1A3926F196AB00C1B0B6 /* Info.plist */,
+				06FFF31D271593CF006DE845 /* SensorsAnalyticsKeychainItem.h */,
+				06FFF31E271593CF006DE845 /* SensorsAnalyticsKeychainItem.m */,
+				06CE1A8D26F197A000C1B0B6 /* SensorsAnalyticsSDK.h */,
+				06CE1A8E26F197A000C1B0B6 /* SensorsAnalyticsSDK.m */,
+				0656CBB126FAF18800DA3566 /* NSObject+SASwizzler.h */,
+				0656CBB226FAF18800DA3566 /* NSObject+SASwizzler.m */,
+				066A4B09270015DF00B92385 /* UIControl+SensorsData.h */,
+				066A4B0A270015DF00B92385 /* UIControl+SensorsData.m */,
+				0656CBB526FAFE8B00DA3566 /* UIViewController+SensorsData.h */,
+				0656CBB626FAFE8B00DA3566 /* UIViewController+SensorsData.m */,
+				066A4AFB26FD74CC00B92385 /* UIApplication+SensorsData.h */,
+				066A4AFC26FD74CC00B92385 /* UIApplication+SensorsData.m */,
+				066A4AFF26FD778E00B92385 /* UIView+SensorsData.h */,
+				066A4B0026FD778E00B92385 /* UIView+SensorsData.m */,
+				06FFF2282701651B006DE845 /* UITableView+SensorsData.h */,
+				06FFF2292701651B006DE845 /* UITableView+SensorsData.m */,
+				06FFF2322702C7B0006DE845 /* SensorsAnalyticsDynamicDelegate.h */,
+				06FFF2332702C7B0006DE845 /* SensorsAnalyticsDynamicDelegate.m */,
+				06FFF239270313EF006DE845 /* SensorsAnalyticsDelegateProxy.h */,
+				06FFF23A270313F0006DE845 /* SensorsAnalyticsDelegateProxy.m */,
+				06FFF23D270315BB006DE845 /* UIScrollView+SensorsData.h */,
+				06FFF23E270315BB006DE845 /* UIScrollView+SensorsData.m */,
+				06FFF24127040DDA006DE845 /* UICollectionView+SensorsData.h */,
+				06FFF24227040DDA006DE845 /* UICollectionView+SensorsData.m */,
+				06FFF2482704126C006DE845 /* UIGestureRecognizer+SensorsData.h */,
+				06FFF2492704126C006DE845 /* UIGestureRecognizer+SensorsData.m */,
+				066A4A9126FC2A1800B92385 /* sensorsdata_black_list.plist */,
+				06439F7A271921A500EAE784 /* SensorsAnalyticsFileStore.h */,
+				06439F7B271921A500EAE784 /* SensorsAnalyticsFileStore.m */,
+				06439F8227192C3B00EAE784 /* SensorsAnalyticsDatabase.h */,
+				06439F8327192C3B00EAE784 /* SensorsAnalyticsDatabase.m */,
+			);
+			path = SensorsSDK;
+			sourceTree = "<group>";
+		};
+		06CE1A8226F1976400C1B0B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06CE1A8826F1976400C1B0B6 /* Demo.app */,
+				06CE1A8A26F1976400C1B0B6 /* DemoTests.xctest */,
+				06CE1A8C26F1976400C1B0B6 /* DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06CE1A9126F1980900C1B0B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0656CB9C26F59C3000DA3566 /* SensorsSDK */,
+				06CE1A9226F1980900C1B0B6 /* SensorKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		06CE1A3026F196AB00C1B0B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06439F7C271921A500EAE784 /* SensorsAnalyticsFileStore.h in Headers */,
+				06FFF2342702C7B0006DE845 /* SensorsAnalyticsDynamicDelegate.h in Headers */,
+				0656CBB326FAF18800DA3566 /* NSObject+SASwizzler.h in Headers */,
+				06CE1A8F26F197A000C1B0B6 /* SensorsAnalyticsSDK.h in Headers */,
+				06FFF22A2701651B006DE845 /* UITableView+SensorsData.h in Headers */,
+				06FFF31F271593CF006DE845 /* SensorsAnalyticsKeychainItem.h in Headers */,
+				06FFF24A2704126C006DE845 /* UIGestureRecognizer+SensorsData.h in Headers */,
+				06CE1A3A26F196AB00C1B0B6 /* SensorsSDK.h in Headers */,
+				06FFF23F270315BB006DE845 /* UIScrollView+SensorsData.h in Headers */,
+				066A4B0126FD778E00B92385 /* UIView+SensorsData.h in Headers */,
+				06439F8427192C3B00EAE784 /* SensorsAnalyticsDatabase.h in Headers */,
+				06FFF24327040DDA006DE845 /* UICollectionView+SensorsData.h in Headers */,
+				066A4AFD26FD74CC00B92385 /* UIApplication+SensorsData.h in Headers */,
+				06FFF23B270313F0006DE845 /* SensorsAnalyticsDelegateProxy.h in Headers */,
+				0656CBB726FAFE8B00DA3566 /* UIViewController+SensorsData.h in Headers */,
+				066A4B0B270015DF00B92385 /* UIControl+SensorsData.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		06CE1A3426F196AB00C1B0B6 /* SensorsSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06CE1A3D26F196AB00C1B0B6 /* Build configuration list for PBXNativeTarget "SensorsSDK" */;
+			buildPhases = (
+				06CE1A3026F196AB00C1B0B6 /* Headers */,
+				06CE1A3126F196AB00C1B0B6 /* Sources */,
+				06CE1A3226F196AB00C1B0B6 /* Frameworks */,
+				06CE1A3326F196AB00C1B0B6 /* Resources */,
+				0656CBA426F5B59E00DA3566 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SensorsSDK;
+			productName = SensorsSDK;
+			productReference = 06CE1A3526F196AB00C1B0B6 /* SensorsSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06CE1A2C26F196AB00C1B0B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					06CE1A3426F196AB00C1B0B6 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 06CE1A2F26F196AB00C1B0B6 /* Build configuration list for PBXProject "SensorsSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06CE1A2B26F196AB00C1B0B6;
+			productRefGroup = 06CE1A3626F196AB00C1B0B6 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 06CE1A8226F1976400C1B0B6 /* Products */;
+					ProjectRef = 06CE1A8126F1976400C1B0B6 /* Demo.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				06CE1A3426F196AB00C1B0B6 /* SensorsSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		06CE1A8826F1976400C1B0B6 /* Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Demo.app;
+			remoteRef = 06CE1A8726F1976400C1B0B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		06CE1A8A26F1976400C1B0B6 /* DemoTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DemoTests.xctest;
+			remoteRef = 06CE1A8926F1976400C1B0B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		06CE1A8C26F1976400C1B0B6 /* DemoUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DemoUITests.xctest;
+			remoteRef = 06CE1A8B26F1976400C1B0B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06CE1A3326F196AB00C1B0B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				066A4A9226FC2A1800B92385 /* sensorsdata_black_list.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06CE1A3126F196AB00C1B0B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0656CBB826FAFE8B00DA3566 /* UIViewController+SensorsData.m in Sources */,
+				06FFF23C270313F0006DE845 /* SensorsAnalyticsDelegateProxy.m in Sources */,
+				06439F7D271921A500EAE784 /* SensorsAnalyticsFileStore.m in Sources */,
+				06CE1A9026F197A000C1B0B6 /* SensorsAnalyticsSDK.m in Sources */,
+				06FFF22B2701651B006DE845 /* UITableView+SensorsData.m in Sources */,
+				06FFF2352702C7B0006DE845 /* SensorsAnalyticsDynamicDelegate.m in Sources */,
+				06FFF24B2704126C006DE845 /* UIGestureRecognizer+SensorsData.m in Sources */,
+				06FFF240270315BB006DE845 /* UIScrollView+SensorsData.m in Sources */,
+				066A4AFE26FD74CC00B92385 /* UIApplication+SensorsData.m in Sources */,
+				0656CBB426FAF18800DA3566 /* NSObject+SASwizzler.m in Sources */,
+				066A4B0226FD778E00B92385 /* UIView+SensorsData.m in Sources */,
+				06FFF320271593CF006DE845 /* SensorsAnalyticsKeychainItem.m in Sources */,
+				06FFF24427040DDA006DE845 /* UICollectionView+SensorsData.m in Sources */,
+				06439F8527192C3B00EAE784 /* SensorsAnalyticsDatabase.m in Sources */,
+				066A4B0C270015DF00B92385 /* UIControl+SensorsData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		06CE1A3B26F196AB00C1B0B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		06CE1A3C26F196AB00C1B0B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		06CE1A3E26F196AB00C1B0B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 22PB288BCR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SensorsSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ningmengyun.SensorsSDK;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-documentation";
+			};
+			name = Debug;
+		};
+		06CE1A3F26F196AB00C1B0B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 22PB288BCR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SensorsSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ningmengyun.SensorsSDK;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-documentation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06CE1A2F26F196AB00C1B0B6 /* Build configuration list for PBXProject "SensorsSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06CE1A3B26F196AB00C1B0B6 /* Debug */,
+				06CE1A3C26F196AB00C1B0B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06CE1A3D26F196AB00C1B0B6 /* Build configuration list for PBXNativeTarget "SensorsSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06CE1A3E26F196AB00C1B0B6 /* Debug */,
+				06CE1A3F26F196AB00C1B0B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06CE1A2C26F196AB00C1B0B6 /* Project object */;
+}
