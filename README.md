@@ -1,1 +1,1 @@
-# SensorsSDK
+# SensorsSDK Demo
